@@ -2,7 +2,6 @@
 @import '../bower_components/neat/app/assets/stylesheets/neat';
 
 // Typography
-$base-font-family: $helvetica;
 
 // Colors
 $blue: #477dca;
@@ -11,11 +10,87 @@ $medium-gray: #999;
 $light-gray: #ddd;
 $very-light-gray: #fafafa;
 
-$base-font-color: $dark-gray;
+$base-font-color: RGBA(51, 51, 51, 1);
 $base-background-color: RGBA(238, 238, 238, 1);
 
 body {
-  font-family: $base-font-family;
+  @include outer-container;
+  font-family: 'Tienne', serif;
   background-color: $base-background-color;
   color: $base-font-color;
+  
+}
+hr {
+  @include span-columns(12);
+  background-color: RGBA(213, 213, 213, 1);
+  height: 1px;
+}
+header {
+  height: 100px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+  padding-top: 40px;
+  box-shadow: 0px 5px 5px 1px lightgray;
+}
+.head-span {
+  font-size: 1.2em;
+  font-weight: 900;
+  text-shadow: 1px 1px 0 #3a50d9, 1px 1px 0 #0a0e27;
+}
+.gradient {
+  background-image:
+    linear-gradient(
+      RGBA(0, 109, 159, 1), RGBA(48, 168, 208, 1)
+    );
+}
+.home,
+.about,
+.port,
+.blog,
+.contact {
+  margin-left: 70px;
+  margin-right: 70px;
+  margin-top: 25px;
+  text-align: center;
+  color: white;
+  border-right-color: RGBA(89, 154, 186, 1);
+  border-right-width: 1px;
+}
+.pageintro {
+  @include span-columns(9);
+}
+.twitter-bird {
+  width: 75px;
+  height: 75px;
+  margin-top: 25px;
+  margin-bottom: 12.5px;
+}
+.flexslider {
+  @include span-columns(7);
+  margin: 0;
+  height: 290px;
+  
+}
+.tangential {
+  @include span-columns(5);
+  font-size: .75em;
+  padding: 10px 10px;
+  padding-bottom: 30px;
+}
+.page-title {
+  font-size: 2em;
+  font-style: bold;
+}
+.page-about {
+  color: RGBA(166, 164, 162, 1);
+  font-style: italic;
+}
+.thirds {
+  width: 300px;
+  float: left;
+}
+footer {
+  float: left;
+  width: 100%;
 }

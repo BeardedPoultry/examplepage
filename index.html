@@ -9,8 +9,15 @@
 
     <link rel="stylesheet" href="bower_components/normalize.css/normalize.css">
     <link href="https://fonts.googleapis.com/css?family=Tienne" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="flexslider.css" type="text/css">
-
+    <link rel="stylesheet" href="styles/flexslider.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <script src="scripts/jquery.flexslider.js"></script>
+    <script type="text/javascript" charset="utf-8">
+      $(window).load(function() {
+       $('.flexslider').flexslider();
+      });
+    </script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="dist/styles/main.css">
 
     <script src="bower_components/modernizr/modernizr.js"></script>
@@ -22,8 +29,6 @@
   <script src="bower_components/jquery/dist/jquery.js"></script>
   <script src="bower_components/underscore/underscore.js"></script>
   <script src="bower_components/handlebars/handlebars.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-  <script src="jquery.flexslider.js"></script>
 
   <!-- Application Scripts -->
   <script src="dist/scripts/templates.js"></script>
